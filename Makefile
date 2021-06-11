@@ -29,3 +29,7 @@ ci-docker:
 		-w $(shell pwd) \
 		atlas/analysisbase:22.2.27 \
 		/bin/bash -c 'bash tests/ci.sh'
+
+clean-artifacts:
+	rm -rf build
+	rm core
