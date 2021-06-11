@@ -14,4 +14,8 @@ python -m pip --quiet install --user --upgrade pip setuptools wheel
 python -m pip install --user --upgrade --requirement test-requirements.txt
 python -m pip list
 
+# Run pytest tests
 python -m pytest -sx tests
+
+# Run built binary tests
+"./build/${AnalysisBase_PLATFORM}/bin/AnalysisPackageRunner"
